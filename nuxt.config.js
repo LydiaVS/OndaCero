@@ -9,7 +9,7 @@ export default {
   head: {
     title: 'onda_cero',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
@@ -38,6 +38,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '~/modules/material-design-icons.js'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
