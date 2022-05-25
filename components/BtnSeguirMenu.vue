@@ -9,9 +9,9 @@
         background-color: $verde
         @apply rounded-3xl
         color: white
-    #btn 
-        font-family: 'Nunito', sans-serif
-        font-size: 12pt
-        font-weight: 900 
+        &:hover 
+            background-color: $verde-2
+            color: $verde
+
 
 </style>

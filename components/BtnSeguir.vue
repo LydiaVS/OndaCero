@@ -8,12 +8,18 @@
         background-color: $verde
         @apply rounded-3xl
         color: $verde-2
+        &:hover
+            background-color: $verde-2
+            color: $verde
     .initial
         width: 150px
         height: 48px
         background-color: $verde-2
         @apply rounded-3xl
         color: $verde
+        &:hover
+            background-color: $verde
+            color: $verde-2
         
     #btn 
         font-family: 'Nunito', sans-serif
