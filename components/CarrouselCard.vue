@@ -1,6 +1,6 @@
 <template>
     <div class="carrousel"> 
-        <div><img src="../assets/img/Manolo.png" alt=""></div>
+        <div><img src="/Manolo.png" alt=""></div>
         <div class="txt">
             <h5 id="verde">Los programas de Onda Cero</h5>
             <h1>Más de Uno</h1>

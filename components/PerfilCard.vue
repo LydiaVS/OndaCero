@@ -1,6 +1,6 @@
 <template>
     <div class="card-perfil"> 
-        <div><img class="img-perfil" src="../assets/img/Manolo.png" alt=""></div>
+        <div><img class="img-perfil" src="/Manolo.png" alt=""></div>
         <div class="txt-perfil">
             <h5 id="azul">Más de Uno</h5>
             <p class="subtitle2" >Carlos Alsina</p>

@@ -1,6 +1,6 @@
 <template>
     <button class="perfil">
-        <img id="perfil" src="../assets/img/Perfil.jpg" alt="">
+        <img id="perfil" src="/Perfil.jpg" alt="">
     </button>
 </template>
 <style lang="sass">
