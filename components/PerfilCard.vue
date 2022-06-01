@@ -13,12 +13,22 @@
     .card-perfil
         width: 500px
         height: 160px
-        background-color: $blanco
-        @apply rounded-full
+        background-color: $blanco 
+        @apply rounded-full 
+        margin: 80px
         box-shadow: $sombra2
         display: flex
         justify-content: flex-start
         align-items: center
+        cursor: pointer
+        &:hover
+            background-color: $verde
+            .subtitle2
+                color: $verde-2
+            .follow2
+                background-color: $blanco
+                border: 3px solid $verde-2
+                 
         .padding
             padding-left: 30px
     .img-perfil

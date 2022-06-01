@@ -5,10 +5,8 @@
             <h5 id="verde">Los programas de Onda Cero</h5>
             <h1>Más de Uno</h1>
             <p class="subtitle1">Carlos Alsina.Las mañanas de OndaCero</p>
-            <div><BtnSeguir/></div>
+            <div><BtnSeguir :texto="'seguir'" /></div>
         </div>
-        
-
     </div>
 </template>
 <style lang="sass">

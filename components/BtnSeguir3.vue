@@ -1,33 +1,24 @@
 <template>
-<div>
-        <button 
-        :class="{'initial': activeTab !== 1, 'is-active': activeTab === 1}" 
-        id="btn" 
-        @click="setActiveTab"
-        v-on:click.prevent> 
-        <span v-if="texto">{{texto}}</span>
-        
-        </button>
-
-</div>
-
+    <button :class="{'active': activeTab !== 1, 'inactive': activeTab === 1}" id="btn" @click="setActiveTab">seguir</button>
 </template>
 <style lang="sass">
-    .is-active
-        width: 150px
-        height: 48px
+    .inactive
+        width: 120px
+        height: 35px
         background-color: $verde
         @apply rounded-3xl
         color: $verde-2
         &:hover
-            background-color: $verde-2
+            background-color: $blanco
             color: $verde
-    .initial
-        width: 150px
-        height: 48px
-        background-color: $verde-2
+            border: 3px solid $verde
+    .active
+        width: 120px
+        height: 35px
+        background-color: $blanco
         @apply rounded-3xl
         color: $verde
+        border: 3px solid $verde
         &:hover
             background-color: $verde
             color: $verde-2
@@ -37,12 +28,10 @@
         font-size: 12pt
         font-weight: 900 
 
-
 </style>
 <script>
      export default {
       data () {
-        
         return {
             activeTab: 0
         }
@@ -52,8 +41,6 @@
               let _this = this; 
               _this.activeTab = 1;
           }
-      },
-      name: "BtnSeguir",
-      props:['texto']
+      }
     }
 </script>
