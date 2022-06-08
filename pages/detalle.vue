@@ -8,6 +8,7 @@
                 </div>
             <h5>Escuchando ahora</h5>
             <div class="back-white">
+            <Player />
 
             </div>
 

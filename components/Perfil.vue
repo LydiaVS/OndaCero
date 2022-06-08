@@ -9,7 +9,6 @@
         <GlobalButton :btnText="'seguir'" :textType="'textype2'"  /> 
         <GlobalButton class="desc" :iconType="'material-symbols-outlined'" :iconName="'arrow_downward'" />
         <BtnCompartir/>
-         
      </div>
 
  </div>
