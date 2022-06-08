@@ -1,3 +1,4 @@
+
 //COLORES
 $verde: #72B84E
 $verde-2: #E1F5D9
@@ -63,5 +64,36 @@ h6
     font-size: 12pt
     font-weight: 900 
     
+
+.material-symbols-outlined
+    font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48,
+    color: $verde
+    height: 35px
+    width: 35px
+    border: 3px solid $verde
+    @apply rounded-full
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: 10px
+    margin-right: 10px
+
+.material-symbols-fill
+    font-variation-settings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48,
+    color: $blanco
+    height: 48px
+    width: 48px
+    @apply rounded-full
+    background-color: $verde
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: 10px
+    margin-right: 10px
+    &:hover 
+        background-color: $verde-2
+        color: $verde
+        border: 3px solid $verde
+
 
 

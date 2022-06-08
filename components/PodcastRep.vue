@@ -2,6 +2,7 @@
     <div class="lista">
         <h6 v-if="NumPodcast">{{NumPodcast}}</h6>
         <p v-if="PodcastTitulo" class="subtitle3" >{{PodcastTitulo}}</p>
+        <GlobalButton :idIcon="'btn-line'" :iconType="'material-symbols-outlined'" :iconName="'favorite'" />
 
     </div>
 </template>

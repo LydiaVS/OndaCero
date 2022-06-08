@@ -2,11 +2,13 @@
  <div class="nav">
   <div class="logo"> <Logo/> </div>
    <div class="btns">
-    <BtnHomeMenu :icon="''"/>
-    <BtnFavsMenu/>
-    <BtnSeguirMenu/>
+    <NuxtLink to="/"><GlobalButton  :iconType="'material-symbols-fill'" :iconName="'home'" /></NuxtLink>
+    <NuxtLink to="/fav"> 
+       <GlobalButton  :iconType="'material-symbols-fill'" :iconName="'favorite'" />
+    </NuxtLink>
+    <NuxtLink to="/seguidos"><GlobalButton :btnText="'mis seguidos'" :textType="'textype'"  /> </NuxtLink>
     <BarraBusqueda/>
-    <BtnPerfilMenu/>
+    <BtnPerfilMenu /> 
    </div>
  </div>
 </template>
@@ -15,7 +17,7 @@
     display: flex
     justify-content: space-between
     align-items: center
-    @media only screen and (max-width: 800px)
+    @media only screen and (max-width: 800 px)
      
     .btns
       display: flex 

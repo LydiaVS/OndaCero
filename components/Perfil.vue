@@ -6,8 +6,8 @@
          <p id="margin-top" class="subtitle2">Carlos Alsina</p>
      </div>
      <div id="btns-perfil">
-        <BtnSeguir3/>
-        <BtnDescargar/>
+        <GlobalButton :btnText="'seguir'" :textType="'textype2'"  /> 
+        <GlobalButton class="desc" :iconType="'material-symbols-outlined'" :iconName="'arrow_downward'" />
         <BtnCompartir/>
          
      </div>
