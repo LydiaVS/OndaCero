@@ -1,5 +1,5 @@
 <template>
-    <div class="card-perfil"> 
+    <NuxtLink to="/Podcast"><div class="card-perfil"> 
         <div><img class="img-perfil" src="/Manolo.png" alt=""></div>
         <div class="txt-perfil">
             <h5 id="azul">Más de Uno</h5>
@@ -7,7 +7,7 @@
             
         </div>
         <div class="padding"><BtnSeguir2 /></div>
-    </div>
+    </div></NuxtLink>
 </template>
 <style lang="sass">
     .card-perfil

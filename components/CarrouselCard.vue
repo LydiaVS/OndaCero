@@ -1,5 +1,5 @@
 <template>
-    <div class="carrousel"> 
+    <NuxtLink to="/Podcast"><div class="carrousel"> 
         <div><img src="/Manolo.png" alt=""></div>
         <div class="txt">
             <h5 id="verde">Los programas de Onda Cero</h5>
@@ -7,7 +7,7 @@
             <p class="subtitle1">Carlos Alsina.Las mañanas de OndaCero</p>
             <div><GlobalButton :btnText="'seguir'" :textType="'textype'"  /> </div>
         </div>
-    </div>
+    </div></NuxtLink>
 </template>
 <style lang="sass">
     .carrousel

@@ -21,6 +21,13 @@
       <GlobalButton class="magnify" :iconType="'material-symbols-fill'" :iconName="'search'"  :propsFont="`fontVariationSettings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48`" />
    </div>
    <div class="inferior">
+      <GlobalButton  
+          :iconType="'material-symbols-fill'" 
+          :iconName="'favorite'" 
+          :propsFont="`fontVariationSettings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48`"/>
+      <NuxtLink to="/"><GlobalButton  :iconType="'material-symbols-fill'" :iconName="'home'" :propsFont="`fontVariationSettings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48`" /></NuxtLink>
+      <NuxtLink to="/"><GlobalButton  :iconType="'material-symbols-fill'" :iconName="'person_add'" :propsFont="`fontVariationSettings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48`" /></NuxtLink>
+
 
    </div>
   
@@ -56,6 +63,12 @@
       background-color: $verde
       @apply mt-10
       border-radius: 50px 50px 0px 0px
+      display: flex
+      flex-direction: row
+      align-content: center
+      justify-content: space-evenly
+      align-items: center
+      color: white
       
 
   

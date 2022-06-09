@@ -33,6 +33,8 @@ export default {
         align-items: center
         margin-right: 1100px
         position: fixed
+        @media only screen and (max-width: 600px)
+            display: none
         img
             height: 170px
     #btns-perfil

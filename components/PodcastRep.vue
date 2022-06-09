@@ -19,6 +19,11 @@
         justify-content: space-between
         &:hover
             background-color: $verde-2
+        @media only screen and (max-width: 600px)
+            width: 320px
+            height: 30px
+            margin-left: 13px
+            margin-top: 45px
         h6
             margin-right: 10px
             margin-left: 20px

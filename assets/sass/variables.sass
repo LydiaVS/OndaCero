@@ -26,6 +26,9 @@ h3
     font-family: 'Nunito', sans-serif
     font-size: 46pt
     font-weight: 900
+    @media only screen and (max-width: 600px)
+        font-size: 24px
+        @apply mb-2
 h4
     font-family: 'Nunito', sans-serif
     font-size: 37pt
@@ -40,6 +43,8 @@ h6
     font-family: 'Nunito', sans-serif
     font-size: 14pt
     font-weight: 900
+    @media only screen and (max-width: 600px)
+        font-size: 14px
 
 .subtitle1
     font-family: 'Nunito', sans-serif
@@ -54,12 +59,14 @@ h6
     font-weight: 900
     color: $verde
     @media only screen and (max-width: 600px)
-        font-size: 12pt
+        font-size: 10pt
 .subtitle3
     font-family: 'Nunito', sans-serif
     font-size: 14pt
     font-weight: 400
     color: $azul
+    @media only screen and (max-width: 600px)
+        font-size: 12px
 .body1
     font-family: 'Nunito', sans-serif
     font-size: 19pt
@@ -87,6 +94,8 @@ h6
     margin-right: 10px
     &:hover
         background-color: $verde-2
+
+        
 
 .material-symbols-fill
     color: $blanco

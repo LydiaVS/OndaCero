@@ -57,6 +57,12 @@ export default {
         &:hover
             background-color: $verde
             color: $verde-2
+        @media only screen and (max-width: 600px)
+            height: 30px
+            width: 120px
+            font-size: 10pt
+            margin-top: 10px
+    
 
 
 

@@ -140,11 +140,16 @@ export default {
         background-color: $verde
         box-shadow: 0px 4px 35px 14px rgba(113, 184, 78, 0.5)
         @apply   p-10
+        @media only screen and (max-width: 600px)
+          width: 380px
+          height: 200px
         .song_title
           font-family: 'Nunito', sans-serif
           font-size: 18pt
           font-weight: 400
           color: white
+          @media only screen and (max-width: 600px)
+            margin-top: -10px
         .song_author
           font-family: 'Nunito', sans-serif
           font-size: 10pt
@@ -154,9 +159,12 @@ export default {
         @apply p-2
         display: flex
         justify-content: center
+       
         .btn_control
             @apply p-2 w-10 h-10
             border-radius: 50%
+            @media only screen and (max-width: 600px)
+              @apply w-12 h-12 p-0
             &.playplause
                 color: white
             &.repeat
