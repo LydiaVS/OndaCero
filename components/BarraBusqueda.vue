@@ -1,7 +1,7 @@
 <template>
     <div class="input">
         <input type="text" id="buscar" > 
-        <GlobalButton class="magnify" :iconType="'material-symbols-fill'" :iconName="'search'" />
+        <GlobalButton class="magnify" :iconType="'material-symbols-fill'" :iconName="'search'"  :propsFont="`fontVariationSettings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48`" />
     </div>
 </template>
 <style lang="sass">
@@ -20,6 +20,8 @@
         align-items: center
         justify-content: center
         color: white
+        @media only screen and (max-width: 600px)
+            @apply ml-48
 
 
 </style>

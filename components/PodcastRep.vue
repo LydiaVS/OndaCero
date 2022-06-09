@@ -16,6 +16,7 @@
         display: flex
         align-items: center
         cursor: pointer
+        justify-content: space-between
         &:hover
             background-color: $verde-2
         h6

@@ -1,26 +1,62 @@
 <template>
+<div>
  <div class="nav">
   <div class="logo"> <Logo/> </div>
    <div class="btns">
-    <NuxtLink to="/"><GlobalButton  :iconType="'material-symbols-fill'" :iconName="'home'" /></NuxtLink>
-    <NuxtLink to="/fav"> 
-       <GlobalButton  :iconType="'material-symbols-fill'" :iconName="'favorite'" />
-    </NuxtLink>
-    <NuxtLink to="/seguidos"><GlobalButton :btnText="'mis seguidos'" :textType="'textype'"  /> </NuxtLink>
+    <NuxtLink to="/"><GlobalButton  :iconType="'material-symbols-fill'" :iconName="'home'" :propsFont="`fontVariationSettings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48`" /></NuxtLink>
+     
+       <GlobalButton  
+          :iconType="'material-symbols-fill'" 
+          :iconName="'favorite'" 
+          :propsFont="`fontVariationSettings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48`"/>
+   
+    <GlobalButton :btnText="'mis seguidos'" :textType="'textype'"   />
     <BarraBusqueda/>
     <BtnPerfilMenu /> 
    </div>
  </div>
+ <div class="nav-phone">
+   <div class="superior">
+     <div class="logo"> <Logo/></div>
+      <GlobalButton class="magnify" :iconType="'material-symbols-fill'" :iconName="'search'"  :propsFont="`fontVariationSettings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48`" />
+   </div>
+   <div class="inferior">
+
+   </div>
+  
+
+   
+
+ </div>
+</div>
 </template>
 <style lang="sass">
+  .nav-phone
+    display: none
   .nav
     display: flex
     justify-content: space-between
     align-items: center
-    @media only screen and (max-width: 800 px)
-     
     .btns
       display: flex 
       @apply pr-10
+  @media only screen and (max-width: 600px)
+    .nav   
+      display: none
+    .nav-phone
+      display: unset
+    .superior
+      display: flex
+      @apply mb-5
+    .inferior
+      bottom: 0
+      position: fixed
+      width: 375px
+      height: 75px
+      background-color: $verde
+      @apply mt-10
+      border-radius: 50px 50px 0px 0px
+      
+
   
 </style>

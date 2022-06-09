@@ -7,25 +7,25 @@
     <!-- control buttons -->
     <div class="controls">
       <button class="btn_control" disabled>
-        <span class="material-symbols-outlined">shuffle</span>
+        <span class="material-symbols-outlined style-player">shuffle</span>
       </button>
       <button class="btn_control" disabled>
-        <span class="material-symbols-outlined">skip_previous</span>
+        <span class="material-symbols-outlined style-player">skip_previous</span>
       </button>
       <button
         class="btn_control playplause"
         @click="playpause">
-          <span v-show="!isPlaiying" class="material-symbols-outlined">play_circle</span>
-          <span v-show="isPlaiying" class="material-symbols-outlined">pause_circle</span>
+          <span v-show="!isPlaiying" class="material-symbols-outlined  style-player">play_circle</span>
+          <span v-show="isPlaiying" class="material-symbols-outlined  style-player">pause_circle</span>
       </button>
       <button class="btn_control" disabled>
-        <span class="material-symbols-outlined">skip_next</span>
+        <span class="material-symbols-outlined  style-player">skip_next</span>
       </button>
       <button
         class="btn_control repeat"
         :class="this.isLooping ? 'active': ''"
         @click="toggleLoop">
-        <span class="material-symbols-outlined">repeat</span>
+        <span class="material-symbols-outlined  style-player">repeat</span>
       </button>
     </div>
     <!-- progress bar -->
@@ -68,10 +68,9 @@ export default {
       isLooping: false,
       step: 0,
       song: {
-        title: "File example",
-        author: "Anonymous",
-        cover: "https://picsum.photos/300/300",
-        src: "/audio_example.mp3",
+        title: "Más de Uno",
+        author: "Gasolina coches de choque y la Adele de la feria...",
+        src: "audio/hsm2.mp3",
         start: 0,
         end: 0
       }
@@ -134,39 +133,55 @@ export default {
 
 <style lang="sass">
     .player
+        width: 203vh
+        bottom: 0
+        position: fixed
+        border-radius: 85px 85px 0px 0px
         background-color: $verde
-        @apply  w-80 p-10
+        box-shadow: 0px 4px 35px 14px rgba(113, 184, 78, 0.5)
+        @apply   p-10
         .song_title
-            font-weight: bold
+          font-family: 'Nunito', sans-serif
+          font-size: 18pt
+          font-weight: 400
+          color: white
         .song_author
-            color: gray
-            font-size: 0.9em  
+          font-family: 'Nunito', sans-serif
+          font-size: 10pt
+          font-weight: 300
+          color: white 
     .controls
         @apply p-2
+        display: flex
+        justify-content: center
         .btn_control
             @apply p-2 w-10 h-10
             border-radius: 50%
             &.playplause
                 color: white
-
             &.repeat
                 &.active
                     color: white
 
             &:disabled
                 color: gray
+        .style-player
+          color: white
+          &:hover
+            color: $verde-2
+            background-color: $verde
     .progress_bar
         @apply my-2
-        background-color: gray
+        background-color: $blanco
         height: 5px
         width: 100%
-        @apply relative   
+        @apply relative rounded-full
         .no_progress
-            @apply h-1 cursor-pointer rounded-full bg-gray-500
-            background-color: gray
+            @apply h-1 cursor-pointer rounded-full bg-white
+            background-color: $blanco
             .progress
                 @apply flex w-full justify-end h-1 rounded-full relative
-                background-color: indigo
+                background-color: $azul
     .progress_btn_pos
         @apply flex w-full justify-end h-1 rounded-full relative
         .progress_btn
@@ -177,6 +192,9 @@ export default {
     .times
         display: flex
         justify-content: space-between
-        font-size: 0.8em
+        font-family: 'Nunito', sans-serif
+        font-size: 9pt
+        font-weight: 300
+        color: white
 
 </style> 

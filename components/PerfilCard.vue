@@ -6,7 +6,7 @@
             <p class="subtitle2" >Carlos Alsina</p>
             
         </div>
-        <div class="padding"><BtnSeguir2/></div>
+        <div class="padding"><BtnSeguir2 /></div>
     </div>
 </template>
 <style lang="sass">
@@ -37,6 +37,14 @@
         color: $azul
     #verde
         color: $verde
+    @media only screen and (max-width: 600px)
+        .card-perfil
+            width: 325px
+            height: 88px
+            margin: 20px
+        .img-perfil
+            height: 87px
+
 
         
 

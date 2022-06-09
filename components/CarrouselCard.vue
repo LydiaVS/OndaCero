@@ -26,5 +26,17 @@
         display: flex
         flex-direction: column
         justify-content: center
+    @media only screen and (max-width: 600px)
+        .carrousel 
+            width: 345px
+            height: 120px
+            div
+                img 
+                    height: 85px
+        .txt
+            h5
+                display: none
+            div
+                display: none
     
 </style>

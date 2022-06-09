@@ -1,7 +1,9 @@
 <template>
     <button>
-       <span
+       <span 
+            :style="propsFont"
             v-if="iconName" 
+            class="material-symbols-outlined"
             :class="iconType"
             :id="idIcon">
             
@@ -13,6 +15,12 @@
             >{{ btnText }}</p>
     </button>
 </template>
+
+<script>
+export default {
+    props: ['iconType', 'iconName', 'btnText', 'textType','btnText', 'propsFont']
+}
+</script>
 <style lang="sass">
 
     .textype 
@@ -54,8 +62,3 @@
 
 
 </style>
-<script>
-export default {
-    props: ['iconType', 'iconName', 'btnText', 'btnFto', 'textType', 'idIcon', 'btnText']
-}
-</script>

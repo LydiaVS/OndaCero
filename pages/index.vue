@@ -69,17 +69,28 @@
         <div><PerfilCard/></div>
         <div><PerfilCard/></div>
       </div>
+      <div class="nada"></div>
     </div>
     
   </div>
 </template>
 
 <style lang="sass">
+  .nada
+    display: none
   .conjuntoCards
     display: flex
 
   .ml
     margin-left: 50px
+  @media only screen and (max-width: 600px)
+    .ml
+      margin-left: 20px
+    .conjuntoCards
+      flex-direction: column
+    .nada
+      display: unset
+      @apply mb-20
 
 </style>
 
